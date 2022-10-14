@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Gallery Page</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="icon" type="image/x-icon" href="images/gps_logo.jpeg">
+			<link rel="stylesheet" href="style1.css"/>
+			
+		</head>
+		<body>
+		<div id="preloader"></div>
+			<div class="main">
+				<div class="navbar">
+					<div class="icon">
+						<div class="logo">
+							<img src="images/gps_logo.jpeg" alt="gps_logo" width="100px"/>
+						</div>
+					</div>	
+					<div class="menu">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="product.html">Products</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							
+						</ul>
+					</div> 
+			    </div>
+				<div class="fullimg" id="FullImgBox">
+					<img src="images/a.jpg" id="FullImg">
+					<span onclick="closeFullImg()">X</span>
+				</div>
+					<div class="gallery">
+						<div class="tooltip">	<img src="images/a.jpg" alt="img1"    onclick="openFullImg(this.src)"/><span class="tooltiptext">ZEN</span></div>
+						<div class="tooltip"><img src="images/b.jpeg" alt="img2"   onclick="openFullImg(this.src)"/><span class="tooltiptext">Mini Plus</span></div>
+						<div class="tooltip"><img src="images/e.jpg" alt="img3"   onclick="openFullImg(this.src)"/><span class="tooltiptext">Pedi Plus 2</span></div>
+						<div class="tooltip"><img src="images/k.jpeg" alt="img4"   onclick="openFullImg(this.src)"/><span class="tooltiptext">Pretty</span></div>
+						<div class="tooltip"><img src="images/o.jpeg" alt="img5"   onclick="openFullImg(this.src)"/><span class="tooltiptext">Style</span></div>
+						<div class="tooltip"><img src="images/22.jpeg" alt="img6"   onclick="openFullImg(this.src)"/><span class="tooltiptext">Choice Plus</span></div>
+						<div class="tooltip"><img src="images/l.jpeg" alt="img7"   onclick="openFullImg(this.src)"/><span class="tooltiptext">Choice Plus</span></div>
+						<div class="tooltip"><img src="images/j.jpg" alt="img8"   onclick="openFullImg(this.src)"/><span class="tooltiptext">Zen Plus</span></div>
+						<div class="tooltip"><img src="images/i.jpg" alt="img9"   onclick="openFullImg(this.src)"/><span class="tooltiptext">Zoya Plus</span></div>
+						<div class="tooltip"><img src="images/r.jpg" alt="img10"  onclick="openFullImg(this.src)"/><span class="tooltiptext">Fancy Box</span></div>
+						<div class="tooltip"><img src="images/h.jpeg" alt="img11"  onclick="openFullImg(this.src)"/><span class="tooltiptext">Pedi Plus 3</span></div>
+						<div class="tooltip"><img src="images/f.jpeg" alt="img12"  onclick="openFullImg(this.src)"/><span class="tooltiptext">Bella Plus</span></div>
+						<div class="tooltip"><img src="images/s.jpg" alt="img13"  onclick="openFullImg(this.src)"/><span class="tooltiptext">Pretty Plus</span></div>
+						<div class="tooltip"><img src="images/t.jpg" alt="img14"  onclick="openFullImg(this.src)"/><span class="tooltiptext">Grace</span></div>
+						<div class="tooltip"><img src="images/u.jpg" alt="img15"  onclick="openFullImg(this.src)"/><span class="tooltiptext">Bella</span></div>
+
+					</div>
+			</div>
+
+
+			
+		<script>
+			var loader=document.getElementById("preloader");
+			window.addEventListener("load",function(){
+				loader.style.display="none";
+			}) 
+			
+			var FullImgBox =document.getElementById("FullImgBox")
+			var FullImg =document.getElementById("FullImg")
+			
+			function openFullImg(pic){
+				FullImgBox.style.display="flex";
+				FullImg.src = pic;
+			}
+			
+			function closeFullImg(){
+				FullImgBox.style.display="none";
+			}
+			
+		</script>	
+		<script src="login.js"></script>
+		</body>
+	</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Contact Page</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="icon" type="image/x-icon" href="images/gps_logo.jpeg">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="style1.css"/>
+			
+		</head>
+		<body>
+		<div id="preloader"></div>
+			<div class="main">
+				<div class="navbar">
+					<div class="icon">
+						<div class="logo">
+							<img src="images/gps_logo.jpeg" alt="gps_logo" width="100px"/>
+						</div>
+					</div>	
+					<div class="menu">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="product.html">Products</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							
+						</ul>
+					</div> 
+					
+			    </div>
+				<div class="contact">
+					<h1>Connect With Us...</h1>
+					<div class="contact-box">
+						<div class="contact-left">
+							<h3>Send Your Request</h3>
+							<form method="POST" action="">
+							
+								<div class="input-row">
+									<div class="input-group">
+										<label>Name</label>
+										<input type="text" name="name" placeholder="Enter Name">
+									</div>
+									<div class="input-group">
+										<label>Phone</label>
+										<input type="text" name="phone"placeholder="Enter Phone No.">
+									</div>
+								</div>
+								<div class="input-row">
+									<div class="input-group">
+										<label>Email</label>
+										<input type="email" name="Email" placeholder="Enter Email Id">
+									</div>
+									<div class="input-group">
+										<label for="subject">Choose Subject:</label>
+										<select name="select" id="subject">
+											<option value="Enquiry">Enquiry</option>
+											<option value="Quotation">Quotation</option>
+										</select>
+									</div>
+								</div>
+								<label>Message</label>
+								<textarea rows="5" name="message" placeholder="Type Your Message"></textarea>
+								
+								<button type="submit" id="submit">Send</button>
+							</form>
+						</div>
+						<div class="contact-right">
+							<h3>Reach Us</h3>
+							<h4><i class="fa fa-envelope" style="font-size:30px;color:black"></i> <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrgDXHjxTNjHdmwtPlchRKQXrNhkgLCFMlZSwzsJCPfFFzdPtVJPfFPhCWDhgrQFzjxprg"target="blank"> : shantanushinde36@gmail.com</a></h4>
+							<h4><i class="fa fa-phone" style="font-size:30px;color:black"></i> : +91 8600871981</h4>
+							<h4><i class="fa fa-whatsapp" style="font-size:30px;color:green"></i><a href="https://api.whatsapp.com/send?phone=918600871981" target="blank"> : +91 8600871981</a>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.9680706938213!2d73.77261359460397!3d18.643545532744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9a96ccc8c21%3A0x5cf028be096ecc93!2sRenuka%20Tower%20Coor%20HSC!5e0!3m2!1sen!2sin!4v1647768413667!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+				
+			</div>	
+			
+			
+		<script>
+			var loader=document.getElementById("preloader");
+			window.addEventListener("load",function(){
+				loader.style.display="none";
+			}) 
+		</script>
+		</body>
+	</html>
